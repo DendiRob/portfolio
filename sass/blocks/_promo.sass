@@ -1,0 +1,79 @@
+.promo
+    margin-top: 30px
+    padding-bottom: 100px
+    .header
+        &__nav
+            display: flex
+            list-style-type: none
+            justify-content: space-between
+            padding: 0
+            &_item
+                font-family: Gilroy-Bold
+                font-size: 18px
+                line-height: 22px
+                color: #828282
+                cursor: pointer
+                &:hover
+                    color: #070707
+            &_underline
+                width: 100%
+                height: 1px
+                background-color: #828282
+                margin-top: 31px
+    &__info
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        margin-top: 40px
+        &_name
+            font-family: Gilroy-Bold
+            font-size: 47px
+            line-height: 59px
+            text-align: left
+            color: #070707
+            width: 120px
+        &_major
+            &-frontend
+                font-family: Gilroy-Medium
+                font-size: 18px
+                line-height: 22px
+                letter-spacing: 0em
+                text-align: left
+                color: #070707
+            &-ageFrom
+                font-family: Gilroy-Medium
+                font-size: 18px
+                line-height: 22px
+                letter-spacing: 0em
+                text-align: left
+                color: #070707
+        &_languages
+            display: flex
+            transform: rotate(-90deg)
+            padding-left: 35px
+            &-rus
+                color: #828282
+                font-family: Gilroy-Bold
+                font-size: 16px
+                line-height: 20px
+                cursor: pointer
+                margin-right: 2px
+            &-divider
+                color: #070707
+                font-family: Gilroy-Bold
+                font-size: 16px
+                line-height: 20px
+                margin-right: 2px
+            &-eng
+                color: #828282
+                font-family: Gilroy-Bold
+                font-size: 16px
+                line-height: 20px
+                cursor: pointer
+    &__photo
+        margin-top: 30px
+        background: url("../img/promo/mainphoto.jpg") no-repeat 50%/cover
+        width: 100%
+        height: 400px
+.activeLanguage
+    color: #070707
