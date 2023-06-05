@@ -8,39 +8,53 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
     <body>
+        <header class="header">
+            <ul class="header__nav">
+                <li><a href="#main" class="header__nav_item">Главная</a></li>
+                <li><a href="#aboutme" class="header__nav_item">О себе</a></li>
+                <li><a href="#portfolio" class="header__nav_item">Портфолио</a></li>
+                <li><a href="#contacts" class="header__nav_item">Контакты</a></li>
+            </ul>
+            <div class="header__nav_underline"></div>
+        </header>
+        <div class="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+            <aside class="aside">
+                <div class="aside__close">
+                    <div class="aside__close-1">
+                        <div class="aside__close-2"></div>
+                    </div>
+                </div>
+                <ul class="aside__menu">
+                    <li><a href="#main" class="aside__menu-item">Главная</a></li>
+                    <li><a href="#aboutme" class="aside__menu-item">О себе</a></li>
+                    <li><a href="#portfolio" class="aside__menu-item">Портфолио</a></li>
+                    <li><a href="#contacts" class="aside__menu-item">Контакты</a></li>
+                </ul>
+        </aside>
+        </div>
         <div class="container">
-            <div class="promo">
-                <header class="header">
-                    <ul class="header__nav">
-                        <li class="header__nav_item">Home</li>
-                        <li class="header__nav_item">About me</li>
-                        <li class="header__nav_item">Portfolio</li>
-                        <li class="header__nav_item">Contacts</li>
-                    </ul>
-                    <div class="header__nav_underline"></div>
-                </header>
+            <div class="promo" id="main">   
                 <div class="promo__info">
                     <div class="promo__info_name">
-                        Saveliy Ryabov
+                        Савелий Рябов
                     </div>
                     <div class="promo__info_major">
                         <div class="promo__info_major-frontend">Front-end developer</div>
-                        <div class="promo__info_major-ageFrom">19 years old, Ulyanovsk</div>
-                    </div>
-                    <div class="promo__info_languages">
-                        <div class="promo__info_languages-rus">RU</div>
-                        <div class="promo__info_languages-divider">|</div>
-                        <div class="promo__info_languages-eng activeLanguage">ENG</div>
+                        <div class="promo__info_major-ageFrom">19 лет, Ульяновск</div>
                     </div>
                 </div>
                 <div class="promo__photo">
                 </div>
             </div>
         </div>
-        <section class="aboutme">
+        <section class="aboutme" id="aboutme">
             <div class="container">
                 <div class="aboutme__title">
-                    About me
+                    О себе
                 </div>
                 <div class="aboutme__text">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo suscipit voluptas maiores expedita quaerat beatae ipsa fugit, in, provident debitis nobis magnam voluptatibus officia quod odit hic repellendus quisquam minus?
@@ -48,9 +62,9 @@
                 </div>
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
-                <div class="portfolio__title">Portfolio</div>
+                <div class="portfolio__title">Портфолио</div>
                 <!-- Это просто шаблон,соответственно потом будут реальные проекты -->
                 <div class="portfolio__item"> 
                     <div class="portfolio__item-img"></div>
@@ -58,11 +72,11 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="container">
-                <h2 class="contacts__title">Contacts</h2>
+                <h2 class="contacts__title">Контакты</h2>
                 <div class="contacts__describe">
-                    You can DM me in these apps
+                    Связаться со мной
                 </div>
                 <div class="contacts__social-wrapper">
                     <a href="https://www.instagram.com/avasdragotsii/" class="contacts__social-item">

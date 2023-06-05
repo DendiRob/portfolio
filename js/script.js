@@ -1,18 +1,21 @@
-// promo
+const burger = document.querySelector('.burger');
+const aside = document.querySelector('.aside');
+const closeMenu = document.querySelector('.aside__close')
+const asideMenuArr = document.querySelectorAll('.aside__menu-item')
 
-const rusLang = document.querySelector('.promo__info_languages-rus');
-const engLang = document.querySelector('.promo__info_languages-eng');
-
-engLang.addEventListener('click', (event) => {
-    console.log(event)
-    rusLang.classList.remove('activeLanguage');
-    engLang.classList.add('activeLanguage');
-
+burger.addEventListener('click',() =>{
+    aside.classList.add('activeMenu');
 });
 
-rusLang.addEventListener('click', (event) => {
-    console.log(event)
-    engLang.classList.remove('activeLanguage');
-    rusLang.classList.add('activeLanguage');
-
+closeMenu.addEventListener('click',() => {
+    aside.classList.remove('activeMenu');
 });
+
+asideMenuArr.forEach((item) => {
+    item.addEventListener('click', ()=> {
+        aside.classList.remove('activeMenu')
+    });
+});
+window.addEventListener('click', (item) => {
+    console.log(item.target)
+})
